@@ -34,14 +34,6 @@
 - [Useful info](./docs/Notes.md)
 - [Configuration Options](https://docs.renovatebot.com/configuration-options/)
 
-## TODO
-
-- [x] Renovate `exercise` label
-- [ ] Dcoker with Hadolint
-- [ ] Limit dependency versions
-- [ ] Makefile renovate it
-- [ ] [Npm](https://docs.renovatebot.com/getting-started/private-packages/#add-npmtoken-to-renovate-config)
-
 ---
 
 <!-- resources -->
