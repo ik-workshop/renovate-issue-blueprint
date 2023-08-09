@@ -26,6 +26,6 @@ run: ## Nothing to RUN yet
 		-e RENOVATE_TOKEN \
 		-e LOG_LEVEL=$(LOG_LEVEL) \
 		-v ${PWD}/.cache:/tmp/renovate \
-		-v ${PWD}/config-$(name).js:/usr/src/app/config.js \
+		-v ${PWD}/config.js:/usr/src/app/config.js \
 		-v ${PWD}/repos.json:/usr/src/app/repos.json \
 		$(CI_RENOVATE_IMAGE) renovate --dry-run=false
