@@ -36,5 +36,5 @@
 ---
 
 <!-- resources -->
-[template.generate]: https://github.com/ik-workshop/renovate-issue-blueprint/renovate-issue-blueprint
+[template.generate]: https://github.com/ik-workshop/renovate-issue-blueprint/
 [code-style.badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
