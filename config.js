@@ -9,7 +9,7 @@ module.exports = {
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "pruneStaleBranches": true,
-  "recreateClosed": true,
+  "recreateWhen": "always",
   "onboarding": false,
   "requireConfig": false,
   "baseBranches": ["master", "main"],
