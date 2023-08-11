@@ -11,7 +11,7 @@ module.exports = {
   "pruneStaleBranches": true,
   "recreateWhen": "always",
   "onboarding": false,
-  "requireConfig": false,
+  "requireConfig": "optional",
   "baseBranches": ["master", "main"],
   "packageRules": [
 
