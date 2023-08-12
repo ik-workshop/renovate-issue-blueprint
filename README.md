@@ -11,21 +11,19 @@
 
 ---
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Contents
+## Issue
 
-- [Renovate Docs](#renovate-docs)
+### Current result
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
----
+### Expected result
 
 ## Create
 
 [**Create a repository using this template →**][template.generate]
 
 ## Resources
+
+### Commands
 
 ### Renovate Docs
 
