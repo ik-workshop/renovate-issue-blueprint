@@ -1,4 +1,4 @@
-# Workshop Blueprint
+# Renovate Blueprint
 
 ---
 
@@ -30,6 +30,11 @@
 - [Example Exercises](./examples)
 - [Useful info](./docs/Notes.md)
 - [Configuration Options](https://docs.renovatebot.com/configuration-options/)
+
+### Renovate somewhere similar Issues
+
+### Supporting Docs
+
 
 ---
 
