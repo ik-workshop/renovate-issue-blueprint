@@ -3,8 +3,9 @@ const Fs = require('fs');
 module.exports = {
   "platform": "github",
   "token": process.env.RENOVATE_TOKEN,
-  "repositories": JSON.parse(Fs.readFileSync('repos.json', 'utf8')),
-  "logLevel": process.env.LOG_LEVEL,
+  "repositories": [
+    "ik-workshop/<CHANGE_ME>"
+  ],
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
@@ -14,17 +15,19 @@ module.exports = {
   "requireConfig": "optional",
   "baseBranches": ["master", "main"],
   "packageRules": [
-
+    // {
+    //   "matchDatasources": ["aws-eks-addon"],
+    // }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "description": "Update docker references in files",
-      "fileMatch": [".*"],
+      "customType": "regex",
+      "fileMatch": [".*\\.tf"],
       "matchStrings": [
-        "image:\n *repository: (?<depName>.*?)\n *tag: (?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?"
+        ".*# renovate: eksAddonsFilter=(?<packageName>.*?)\n.*?[a-zA-Z0-9-_:]*[ ]*?[:|=][ ]*?[\"|']?(?<currentValue>[a-zA-Z0-9-_.]+)[\"|']?.*"
       ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
+      // "datasourceTemplate": "aws-eks-addon",
+      // "versioningTemplate": "aws-eks-addon"
     }
   ]
 }
